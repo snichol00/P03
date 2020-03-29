@@ -27,8 +27,8 @@
     </ul>
 
     <h3> Functional Programming</h3>
-    <h6>Functional programming is a way of computing that focuses less on defining a function step-by-step and more on the outcome, creating more concise but less explicit code. It relies on the machine to fill in the steps in between.</h6>
-    <h5> Key Features </h5>
+    <p>Functional programming is a way of computing that focuses less on defining a function step-by-step and more on the outcome, creating more concise but less explicit code. It relies on the machine to fill in the steps in between.</p>
+    <h4> Key Features </h4>
     <ul>
       <li>Declarative rather than imperative: meaning it's more focused on the what is accomplished than how it's done</li>
       <li>Pure functions: Always the same output for every input</li>
@@ -38,9 +38,37 @@
       <li>Immutability: Prevents lossy data flow and the bugs that are associated with mutable data.</li>
     </ul>
 
-    <h3> Syntax <h3>
+    <h3> Syntax </h3>
+      <ul>
+        <li>Type "scala" into your terminal to experiment with Scala syntax, which is generally similar to Java</li>
+        <li>Defining variable types is not necessary in Scala, but there are two main types:
+          <ul>
+            <li>Val: Immutable, and Scala automatically creates a get function</li>
+            <li>Var: Mutable, and Scala creates both a getter and setter for the variable</li>
+          </ul>
+        </li>
+        <li>Sample "hello world" function:
+        object HelloWorld{
+          def main(args: Array[String]) {
+            println("Hello World!")
+          }
+        }
+      </li>
+      </ul>
 
-  <h3> Classes </h3>
+    <h3> Classes </h3>
+    <ul>
+      <li>Allows for multiple constructors(as long as they have different parameters) and default values for fields</li>
+      <li>The default constructor can essentially be contained in the first line of the class, because when you include inputs for a class scala will automatically make a constructor and getter or setters if applicable<li>
+      <li>Mixins: the user can extend Scala traits with a class or abstract class</li>
+      <li>Case Classes:
+        <ul>
+          <li>Immutable</li>
+          <li>Don't require the "new" keyword, because case classes have an apply method that takes care of object creation</li>
+          <li>Compares by structure rather than reference</li>
+          <li>Pattern matching: using the keyword match, you are able to write methods that take in a variable and figure out what kind of case class it is.</li>
+        </ul>
+      </li>
 
   </body>
 </html>
